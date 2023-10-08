@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>combinators selector</title>
+    <style>
+        
+
+ /* Descendant combinator select all the para child, grand child of div
+div p{
+color: blue;
+}
+
+ Child combinator select current or direct child of div
+div > p{
+    color:brown;
+}
+
+Adjacent sibling combinator select the first sibling of div
+div + p{
+    color: rebeccapurple;
+}   */
+
+/*General sibling combinator select all sibling of div */
+div ~ p{
+    color: green;
+}
+    </style>
+</head>
+<body>
+    <div>
+        <p>paragraph of div</p>
+        <p>paragraph of div</p>
+        <p>paragraph of div</p>
+        <section>section of div
+            <p>paragraph of section</p>
+            <p>paragraph of section</p>
+            <p>paragraph of section</p>
+        </section>
+        <p>paragraph of div sibling</p>
+        <p>paragraph of div sibling</p>
+        <p>paragraph of div sibling</p>
+        <p>paragraph of div sibling</p>
+
+    </div>
+    <p>paragraph of div sibling</p>
+    <p>paragraph of div sibling</p>
+    <p>paragraph of div sibling</p>
+    <p>paragraph of div sibling</p>
+</body>
+</html>
