@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .sbox1 {
+            border: solid;
+            background-color: green;
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            top: 0px;
+            left: 0px;
+        }
+
+        .sbox2 {
+            border: solid;
+            background-color: orangered;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            height: 50px;
+            width: 50px;
+        }
+
+        .bigbox1 {
+            border: solid;
+            background-color: rgb(255, 0, 255);
+            position: relative;
+            left: 50px;
+            top: 50px;
+            height: 300px;
+            width: 500px;
+        }
+
+        .bigbox2 {
+            border: solid;
+            background-color: rgb(38, 0, 255);
+            position: relative;
+            left: 50px;
+            top: 50px;
+            height: 300px;
+            width: 500px;
+        }
+
+        #v1 {
+            background-color: red;
+        }
+
+        #v2 {
+            background-color: darksalmon;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="sbox1">1
+    </div>
+
+    <div class="sbox2">2</div>
+    <div class="bigbox1">
+        <div class="sbox1" id="v1">3
+        </div>
+    </div>
+    <br>
+    <div class="bigbox2">
+        <div class="sbox1" id="v2">4
+        </div>
+    </div>
+</body>
+
+</html>
