@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Child combinator / Direct child selector (>) in CSS</title>
+    <style>
+
+        .parentDiv{
+
+            background-color: aqua;
+
+            width: 80%;
+
+            height: 300px;
+
+            border: solid 5px black;
+
+            margin: 100px;
+
+            text-align: center;
+
+        }
+
+        .parentDiv > p{
+
+            color: blue;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+ 
+
+<div class="parentDiv">
+
+    <p>This paragraph 1 is direct child of div</p>
+
+    <p>This paragraph 2 is direct child of div</p>
+
+    <div>
+
+        <p>This paragraph 3 is not a direct child of div as it is nested inside another div, hence it will not change into blue font color</p>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
