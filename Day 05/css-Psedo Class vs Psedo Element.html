@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psedo Class vs Psedo Element</title>
+    <style>
+        /* Psedo Class use : */
+        p:first-child{
+            background-color: rgb(218, 185, 137);
+        }
+        p:last-child{
+            background-color: rgb(95, 206, 110);
+        }
+        p:nth-child(odd){
+            color: blue;
+        }
+        p:nth-child(even){
+            color: rgb(35, 95, 43);
+        }
+        p:hover{
+            color: red;
+        }
+        /* a:visited{
+            color: rgb(200, 125, 230);
+        } */
+        a:focus{
+            color: coral; 
+        }
+        a:active{
+            font-weight: 700;
+        }
+        a{
+            font-size: xx-large;
+            text-decoration: none;
+        }
+
+        /* Psedo Element use :: */
+        
+            p::before{
+            content:" # ";
+        }
+        p::after{
+            content:" *** ";
+        }
+        p::first-letter{
+            color: black;
+            font-size: 50px;
+            font-weight:bolder;
+        }
+        /* p::first-line{
+            color: rgb(149, 211, 206);
+            font-size: 50px;
+            font-weight:bolder;
+        } */
+        ::selection{
+            color: black;
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="http://google.com">Google</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, pariatur. Vitae velit earum vero fugiat quis facere pariatur eaque ex, amet placeat consectetur, numquam eligendi tempora, commodi voluptatem cupiditate excepturi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, pariatur. Vitae velit earum vero fugiat quis facere pariatur eaque ex, amet placeat consectetur, numquam eligendi tempora, commodi voluptatem cupiditate excepturi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, pariatur. Vitae velit earum vero fugiat quis facere pariatur eaque ex, amet placeat consectetur, numquam eligendi tempora, commodi voluptatem cupiditate excepturi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, pariatur. Vitae velit earum vero fugiat quis facere pariatur eaque ex, amet placeat consectetur, numquam eligendi tempora, commodi voluptatem cupiditate excepturi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, pariatur. Vitae velit earum vero fugiat quis facere pariatur eaque ex, amet placeat consectetur, numquam eligendi tempora, commodi voluptatem cupiditate excepturi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, pariatur. Vitae velit earum vero fugiat quis facere pariatur eaque ex, amet placeat consectetur, numquam eligendi tempora, commodi voluptatem cupiditate excepturi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, pariatur. Vitae velit earum vero fugiat quis facere pariatur eaque ex, amet placeat consectetur, numquam eligendi tempora, commodi voluptatem cupiditate excepturi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, pariatur. Vitae velit earum vero fugiat quis facere pariatur eaque ex, amet placeat consectetur, numquam eligendi tempora, commodi voluptatem cupiditate excepturi.</p>
+    </div>
+</body>
+</html>
