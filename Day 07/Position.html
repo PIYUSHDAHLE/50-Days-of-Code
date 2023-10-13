@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+      .sq{
+        border:solid;
+        background-color: aquamarine;
+        height: 50px;
+        width: 50px;
+      }
+      #first{
+        background-color: blueviolet;
+        /* position: static; default */
+        position: relative;
+        left: 50px;
+      }
+      #second{
+        background-color: brown;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+      }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+</head>
+<body>
+    <div class="sq" id="first"></div>
+    <div class="sq" id="second"></div>
+    <div class="sq" id="third"></div>
+</body>
+</html>
