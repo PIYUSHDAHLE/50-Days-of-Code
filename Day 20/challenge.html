@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>counter</title>
+<script>
+let count = 0;
+function incrementCount() {
+count = addTwoNumbers(count, 1);
+displayUpdatedCount(count)
+}
+function addTwoNumbers(num1, num2) {
+let ans = num1 + num2;
+return ans
+}
+function resetCount() {
+count = 0;
+displayUpdatedCount(count)
+}
+function displayUpdatedCount(number) {
+document.getElementById("counter-text").innerText = number;
+}
+</script>
+</head>
+<body>
+<h1 id="counter-text">0</h1>
+<button type="button" name="incrementBtn" onclick="incrementCount()">Add</button>
+<button type="button" name="resetBtn" onclick="resetCount()">Reset</button>
+</body>
+</html>
