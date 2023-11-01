@@ -1,0 +1,5 @@
+5 falsy value = 0,"",NaN,undefined,null
+and false is always falsy value
+
+truthy means true value
+and rest values are truthy value
