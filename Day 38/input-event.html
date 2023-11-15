@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 26px;
+        color: rgb(217, 152, 223);
+        background-color: rgb(43, 40, 46);
+        text-align: center;
+      }
+      #ice {
+        width: 300px;
+        height: 30px;
+        color: rgb(217, 152, 223);
+        font-size: 25px;
+      }
+      #iceCream {
+        width: 300px;
+        height: 30px;
+        color: rgb(41, 54, 173);
+        font-size: 25px;
+      }
+      #result {
+        color: aqua;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <p>A function is triggered when a key is pressed</p>
+      <br />
+
+      <input type="text" id="name" placeholder="Enter your name" />
+      <br />
+      <h4>choose your favourite ice cream</h4>
+      <select name="iceCream" id="iceCream" onchange="selectElement()">
+        <option value="">Select one</option>
+        <option value="chocolate">chocolate</option>
+        <option value="vanila">vanila</option>
+        <option value="strawberry">strawberry</option>
+      </select>
+      <br />
+      <p id="result"></p>
+    </div>
+    <script>
+      const selectElement = () => {
+        const name = document.getElementById("name");
+        const iceCream = document.getElementById("iceCream");
+        const result = document.getElementById("result");
+        console.log(
+          `Hello ${name.value} your favourite ice cream is ${iceCream.value}`
+        );
+        result.innerHTML = `Hello ${name.value} your favourite ice cream is ${iceCream.value}`;
+      };
+
+      //other way of doing
+
+      //   const ice = document.getElementById("ice");
+      //   ice.addEventListener("change", () => {
+      //     const name = document.getElementById("name");
+      //     const iceCream = document.getElementById("iceCream");
+      //     const result = document.getElementById("result");
+      //     console.log(
+      //       `Hello ${name.value} your favourite ice cream is ${iceCream.value}`
+      //     );
+      //     result.innerHTML = `Hello ${name.value} your favourite ice cream is ${iceCream.value}`;
+      //   });
+    </script>
+  </body>
+</html>

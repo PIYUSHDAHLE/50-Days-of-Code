@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h2 {
+        color: yellow;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-transform: uppercase;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        color: rgb(16, 35, 145);
+        background-color: rgb(120, 88, 150);
+        text-align: center;
+      }
+      button {
+        background-color: chartreuse;
+        border: none;
+        color: brown;
+        border-radius: 4px;
+        margin: 10px;
+        padding: 10px;
+      }
+      button:hover {
+        background-color: aquamarine;
+      }
+      button a{
+        color: black;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Different event types in javascript</h1>
+    <h3>1st way</h3>
+    <button><a onclick="alert('simple inline alert()')">simple inline alert()</a></button>
+
+    <h3>2nd way</h3>
+    <button><a onclick="callfun()">alert using function call</a></button>
+
+    <h3>3rd way</h3>
+    <button id="third"><a>alert using document and function call</a></button>
+
+    <h3>4th way</h3>
+    <button id="fourth"><a>alert using event listener</a></button>
+
+    <script>
+      // 2nd way
+      function callfun() {
+        alert('this is 2nd way to show alert using function call');
+      }
+
+      // 3rd way
+      const thirdway = document.getElementById('third');
+      thirdway.onclick = function () {
+        alert('this is 3rd way to show alert using document and function call');
+      };
+      thirdway.onclick = function () {
+        console.log('this is 3rd way to show alert using document and function call');
+      };
+     //onclick is use only one time
+
+      // 4th way
+      const fourthway = document.querySelector('#fourth');
+      fourthway.addEventListener('click', function () {
+        alert('this is 4th way to show alert using document, function call and event listener');
+      })
+      fourthway.addEventListener('click', function () {
+        console.log('this is 4th way to show alert using document, function call and event listener');
+      })
+      //event listener is use multiple times
+    </script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+        background-color: black;
+        color: white;
+      }
+      button {
+        border-radius: 0px;
+        padding: 10px;
+        background-color: blue;
+        color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <br />
+    <h1 id="tit">Hello , My name is Piyush</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit
+      animi maiores voluptates veritatis numquam cumque alias omnis architecto
+      veniam quas vel reiciendis, qui optio iste voluptatibus et molestiae
+      necessitatibus.
+    </p>
+    <button onclick="boom()">Click Me</button>
+    <h4 class="para">boss ji</h4>
+    <h4 class="para">love your self</h4>
+    <h4 class="para">love your self</h4>
+    <button onclick="boom2()">Click Me</button>
+    <script>
+      const boom = () => {
+        document.getElementById("tit").style.color = "yellow";
+        document.getElementById("tit").innerHTML = "Welcome to my website";
+        document.getElementsByTagName("p")[0].innerHTML = "I am Piyush Dahle";
+      };
+      const boom2 = () => {
+        document.querySelector("h4").style.color = "red";
+        console.log(document.querySelectorAll(".para"));
+        console.log(document.querySelector(".para").innerHTML);
+        console.log(document.getElementsByClassName(".para"));
+      };
+    </script>
+  </body>
+</html>

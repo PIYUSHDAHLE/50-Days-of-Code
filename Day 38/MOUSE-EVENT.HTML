@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        color: rgb(217, 152, 223);
+        background-color: rgb(43, 40, 46);
+        text-align: center;
+      }
+      #box {
+        display: inline-block;
+        align-items: center;
+        background-color: aqua;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="mypara" onmousedown="mousedown()" onmouseup="mouseup()">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eos
+      corporis quia quod soluta accusamus, sit magnam totam, laudantium illum
+      dolore doloribus minima aut magni quaerat illo aspernatur mollitia
+      quisquam!
+    </p>
+
+    <div id="box"></div>
+
+    <script>
+      function mousedown() {
+        document.getElementById("mypara").style.color = "white";
+      }
+      function mouseup() {
+        document.getElementById("mypara").style.color = "yellow";
+      }
+
+      //================================
+
+      const mEnter = document.getElementById("box");
+
+      mEnter.addEventListener("mouseenter", function () {
+        document.getElementById("box").style.backgroundColor = "purple";
+        console.log("mouse enter");
+      });
+      mEnter.addEventListener("mouseleave", function () {
+        document.getElementById("box").style.backgroundColor = "pink";
+        console.log("mouse leave");
+      });
+    </script>
+  </body>
+</html>

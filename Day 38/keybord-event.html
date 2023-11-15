@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 26px;
+        color: rgb(217, 152, 223);
+        background-color: rgb(43, 40, 46);
+        text-align: center;
+      }
+      .effect-1 {
+        padding: 10px;
+        font-size: larger;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <p>A function is triggered when a key is pressed</p>
+      <br />
+      <input
+        type="text"
+        class="effect-1"
+        onkeypress="keypress()"
+        onkeydown="keydown()"
+        onkeyup="keyup()" />
+      <br />
+      <p id="keys"></p>
+    </div>
+    <script>
+      const keypress = () => {
+        document.getElementById(
+          "keys"
+        ).innerHTML = `you press ${event.key} and it's code is ${event.code}`;
+      };
+
+      const keydown = () => {
+        document.getElementById("keys").innerHTML = `key is down`;
+      };
+      const keyup = () => {
+        document.getElementById("keys").innerHTML = `key is up`;
+      };
+    </script>
+  </body>
+</html>

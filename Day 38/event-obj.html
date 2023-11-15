@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        color: rgb(9, 7, 100);
+        background-color: rgb(120, 88, 150);
+        text-align: center;
+      }
+      button {
+        background-color: chartreuse;
+        border: none;
+        color: brown;
+        border-radius: 4px;
+        margin: 10px;
+        padding: 10px;
+      }
+      button:hover {
+        background-color: aquamarine;
+      }
+      button a {
+        color: black;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>let see what is event object ?</h3>
+    <button id="fourth"><a>Event listener</a></button>
+
+    <script>
+      const fourth = document.getElementById("fourth");
+      const checkEvent = () => {
+        alert("this is event object");
+        console.log(event);
+        console.log(event.target);
+        console.log(event.type);
+      };
+      fourth.addEventListener("click", checkEvent);
+    </script>
+  </body>
+</html>
