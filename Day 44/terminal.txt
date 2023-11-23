@@ -1,0 +1,4 @@
+1. npm init :- This utility will walk you through creating a package.json file.
+2. node -v :- mdn check version
+3. dir :- open directary
+4. node index.js :- it save thefile in localhost5000
