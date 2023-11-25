@@ -1,0 +1,19 @@
+node index.js 
+npm -v
+node -v
+npm init
+npm install express --save  or npm i 
+
+INSTALLING
+npm i -g nodemon
+nodemon index.js
+npm install --save-dev nodemon  (dev Dependencies)
+
+UNINSTALLING
+npm uninstall nodemon
+npm uninstall express
+
+
+set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+Get-ExecutionPolicy
+Get-ExecutionPolicy -list

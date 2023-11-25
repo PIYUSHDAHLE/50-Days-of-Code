@@ -1,0 +1,14 @@
+{
+  "name": "piyush",
+  "version": "1.0.0",
+  "description": "It's an amazing package",
+  "main": "index.js",
+  "scripts": {
+    "test": "deml"
+  },
+  "author": "piyush dahle",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
