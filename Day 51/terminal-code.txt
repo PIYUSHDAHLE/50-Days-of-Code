@@ -1,0 +1,25 @@
+type nul > xyz.js    it is use to create new file
+
+REPL is use in the terminal using (node)
+
+terminal code for file back/forward
+
+cd ..  back 
+dir    to see all file and folder
+cd .\filename\  to enter the folder     
+
+
+REPL
+
+1. js expression
+2. use variables
+3. multi line code /loop
+4. use ( _ ) to get the last result 
+5. we can use editor mode {.editor}
+
+CURD 
+
+create
+update
+read 
+delete
