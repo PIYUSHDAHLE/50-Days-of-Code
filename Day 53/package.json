@@ -1,0 +1,15 @@
+{
+  "name": "day-69",
+  "version": "1.0.0",
+  "description": "dahle coder",
+  "main": "09-npm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Piyush",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "nodemon": "^3.0.1"
+  }
+}
